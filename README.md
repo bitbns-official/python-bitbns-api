@@ -123,13 +123,13 @@ This project is designed to assist you make your own projects that interact with
     <tr>
       <th>Bitcoin</th>
       <th>BTC</th>
-      <th>0.01</th>
+      <th>0.001</th>
       <th>20</th>
     </tr>
     <tr>
       <th>Ripple</th>
       <th>XRP</th>
-      <th>150</th>
+      <th>50</th>
       <th>500000</th>
     </tr>
     <tr>
@@ -243,7 +243,7 @@ This project is designed to assist you make your own projects that interact with
     <tr>
       <th>0x</th>
       <th>ZRX</th>
-      <th>87</th>
+      <th>10</th>
       <th>3000</th>
     </tr> 
     <tr>
@@ -261,7 +261,7 @@ This project is designed to assist you make your own projects that interact with
     <tr>
       <th>Tether</th>
       <th>USDT</th>
-      <th>100</th>
+      <th>5</th>
       <th>5000</th>
     </tr>  
     <tr>
@@ -385,18 +385,6 @@ This project is designed to assist you make your own projects that interact with
       <th>200000</th>
     </tr>
     <tr>
-      <th>0x</th>
-      <th>ZRX</th>
-      <th>87</th>
-      <th>3000</th>
-    </tr>
-    <tr>
-      <th>Augur</th>
-      <th>REP</th>
-      <th>6</th>
-      <th>500</th>
-    </tr>
-    <tr>
       <th>LOOM Network</th>
       <th>LOOM</th>
       <th>500</th>
@@ -404,7 +392,7 @@ This project is designed to assist you make your own projects that interact with
     </tr>
     <tr>
       <th>eosDAC</th>
-      <th>eosDAC</th>
+      <th>EOSDAC</th>
       <th>1600</th>
       <th>200000</th>
     </tr>
@@ -416,15 +404,9 @@ This project is designed to assist you make your own projects that interact with
     </tr>
     <tr>
       <th>Golem</th>
-      <th>GOLEM</th>
+      <th>GNT</th>
       <th>400</th>
       <th>200000</th>
-    </tr>
-    <tr>
-      <th>QTUM</th>
-      <th>QTUM</th>
-      <th>17</th>
-      <th>1000</th>
     </tr>
     <tr>
       <th>PundiX</th>
@@ -436,7 +418,7 @@ This project is designed to assist you make your own projects that interact with
       <th>Ethereum Classic</th>
       <th>ETC</th>
       <th>10</th>
-      <th>2000000</th>
+      <th>200000</th>
     </tr>
     <tr>
       <th>DENT</th>
