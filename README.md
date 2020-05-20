@@ -1619,3 +1619,149 @@ serverTime -> the server timestamp
 status -> the response succeeded
   </pre>
 </details>
+
+<h3>API V2 (New Features)</h3>
+<b>Place Orders(BUY or SELL)</b><br>
+<pre>
+<b>(Placing Bracket Order)</b>
+
+bitbnsObj.placeOrders({'symbol': 'XRP', 'side': 'BUY', 'quantity': 40, 'rate': 4, 'target_rate': 5, 't_rate': 3.5, 'trail_rate': .01})
+
+side -> BUY or SELL
+symbol -> COIN NAME,
+quantity -> QUANTITY,
+rate -> RATE,
+target_rate -> TARGET RATE,
+t_rate -> TRRIGER RATE,
+trail_rate -> TRAIL RATE
+
+To Place Simple Buy or Sell Order use <b>rate</b>
+To Place Stoploss Buy or Sell Order use <b>rate & t_rate</b>
+To Place Bracket Buy or Sell Order use <b>rate , t_rate, target_rate & trail_rate</b>
+</pre>
+
+<b>Cancel Order</b><br>
+<pre>
+bitbnsObj.cancelOrders({'symbol': 'XRP', 'side' : 'cancelOrder', 'entry_id': 462})
+
+side -> "cancelOrder","cancelStopLossOrder", "usdtcancelOrder", "usdtcancelStopLossOrder"
+symbol -> COIN NAME
+entry_id : ENTRY ID
+
+</pre>
+
+<b>Place Orders in USDT Market</b><br>
+<pre>
+bitbnsObj.placeOrders({'symbol': 'TRX_USDT', 'side': 'BUY', 'quantity': 40, 'rate': 4, 'target_rate': 5, 't_rate': 3.5, 'trail_rate': .01})
+
+side -> BUY or SELL
+symbol -> COIN NAME(use suffix "_USDT" with coin name)
+quantity -> QUANTITY,
+rate -> RATE,
+target_rate -> TARGET RATE,
+t_rate -> TRRIGER RATE,
+trail_rate -> TRAIL RATE
+
+To Place Simple Buy or Sell Order use <b>rate</b>
+To Place Stoploss Buy or Sell Order use <b>rate & t_rate</b>
+To Place Bracket Buy or Sell Order use <b>rate , t_rate, target_rate & trail_rate</b>
+
+</pre>
+
+<b>Cancel Order in USDT MARKET</b><br>
+<pre>
+
+bitbnsObj.cancelOrders({'symbol': 'TRX_USDT', 'side' : 'usdtcancelOrder', 'entry_id': 462})
+
+side -> "cancelOrder","cancelStopLossOrder", "usdtcancelOrder", "usdtcancelStopLossOrder"
+symbol -> COIN NAME(use suffix "_USDT" with coin name)
+entry_id : ENTRY ID
+
+</pre>
+
+<b>Get Orders in USDT MARKET</b><br>
+<pre>
+
+bitbnsObj.getOrders({'side' : 'usdtListOpenOrders', 'symbol' : 'TRX_USDT', 'page' : 0})
+
+side -> "listOpenOrders", "listOpenStopOrders", "listOpenBracketOrders", "usdtListOpenBracketOrders",
+         "usdtListOpenStopOrders","usdtListOpenOrders" 
+symbol -> COIN NAME(use suffix "_USDT" with coin name)
+page -> INTEGER
+
+</pre>
+
+<b>Margin Trading V2 APIs</b><br>
+<pre>
+<b>Place a margin order</b>
+
+bitbnsObj.placeMarginOrders({'symbol': 'USDT', 'side': 'placeOrder', 'type': 'LEND', 'qnty': 40, 'days': 1, 'rate': 0.0055})
+
+side -> placeOrder
+type -> BORROW or LEND
+days -> 1,3,7,15,30
+renew -> 0,1,2
+symbol -> COIN NAME,
+qnty -> QUANTITY,
+rate -> RATE
+
+Renew Flags => 0 - Don't renew, 1 -> Renew only Principal, 2 -> Renew with Principal + Interest
+
+</pre>
+
+<pre>
+<b>Cancel a margin order</b>
+
+bitbnsObj.cancelMarginOrder({'id': 1, 'side': 'cancelMarginOrder', 'symbol': 'USDT'})
+
+Pass id of the margin transaction you are looking to cancel
+symbol -> COIN NAME,
+
+</pre>
+
+<pre>
+<b>Settle a margin order partially</b>
+
+bitbnsObj.settleMarginPartial({'id': 1, 'side': 'settleMarginOrderPartial', 'amt': 50, 'symbol': 'USDT'})
+
+amt -> Amount to settle
+
+Pass id of the margin transaction you are looking to settle and amt you want to settle
+
+</pre>
+
+<pre>
+<b>Settle a margin order completely</b>
+
+bitbnsObj.settleMargin({ 'id' : 1, 'side' : 'settleMarginOrder', 'symbol': 'USDT' })
+
+Pass id of the margin transaction you are looking to settle
+
+</pre>
+
+<pre>
+<b>Get my margin executed orders</b>
+
+bitbnsObj.listMarginExecuted({'page': 1, 'side': 'listMarginExecuted', 'type': 'BORROW', 'symbol': 'USDT'})
+
+type => LEND or BORROW
+
+</pre>
+
+<pre>
+<b>Get my margin pending orders</b>
+
+bitbnsObj.listMarginPending({'page': 1, 'side': 'listMarginPending', 'symbol': 'USDT'})
+
+</pre>
+
+
+<pre>
+<b>Get open orders of margin market - all users</b>
+
+bitbnsObj.listMarginMarketOrders({'type': 'BORROW', 'side': 'listMarketOrders', 'symbol': 'XRP'})
+
+type => LEND or BORROW
+
+</pre>
+
