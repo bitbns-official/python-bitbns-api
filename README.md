@@ -1375,9 +1375,9 @@ status -> status of cancellation 1 for success
   </pre>
 </details>
 
-<b>Getting Sell Order Book</b><br>
+<b>Getting Sell Order Book for BTC</b><br>
 <pre>
-bitbnsObj.getSellOrderBook('XRPUSDT')
+bitbnsObj.getSellOrderBook('BTC')
 </pre>
 
 <details> 
@@ -1458,9 +1458,127 @@ bitbnsObj.getSellOrderBook('XRPUSDT')
    </pre>
 </details>
 
-<b>Getting Buy Order Book</b><br>
+<b>Getting Sell Order Book for BTCUSDT</b><br>
+<pre>
+bitbnsObj.getSellOrderBook('BTCUSDT')
+</pre>
+
+<details> 
+  <summary>
+   View Response
+  </summary>
+  <pre>
+    {
+  data: [
+    {
+      rate: 481847.56,
+      btc: 6352679
+    },
+    {
+      rate: 481700,
+      btc: 5540000
+    },
+    {
+      rate: 481551,
+      btc: 5000000
+    },
+    {
+      rate: 481000,
+      btc: 11406
+    },
+    {
+      rate: 480000,
+      btc: 208021
+    },
+    {
+      rate: 479366.65,
+      btc: 5265026
+    },
+    {
+      rate: 479345,
+      btc: 453445
+    },
+    {
+      rate: 478854.18,
+      btc: 642042
+    },
+    {
+      rate: 478749.87,
+      btc: 208356
+    },
+    {
+      rate: 478511.87,
+      btc: 2446067
+    },
+    {
+      rate: 478000,
+      btc: 80253706
+    },
+    {
+      rate: 477900,
+      btc: 6261808
+    },
+    {
+      rate: 477777,
+      btc: 208900000
+    },
+    {
+      rate: 477740,
+      btc: 15000000
+    },
+    {
+      rate: 477706.19,
+      btc: 5003424
+    }
+  ],
+  status: 1,
+  error: null
+}
+
+ Explanation of fields:
+ rate -> the amount of the order
+ btc -> the volume of the coin for that order
+   </pre>
+</details>
+
+<b>Getting Buy Order Book for BTC</b><br>
 <pre>
 bitbnsObj.getBuyOrderBook('BTC')
+</pre>
+<details> 
+  <summary>
+   View Response
+  </summary>
+  <pre>
+    { data:
+  [ { rate: 481847.56, btc: 6352679 },
+    { rate: 481700, btc: 5540000 },
+    { rate: 481551, btc: 5000000 },
+    { rate: 481000, btc: 11406 },
+    { rate: 480000, btc: 208021 },
+    { rate: 479366.65, btc: 5265026 },
+    { rate: 479345, btc: 453445 },
+
+    { rate: 478854.18, btc: 642042 },
+    { rate: 478749.87, btc: 208356 },
+    { rate: 478511.87, btc: 2446067 },
+    { rate: 478000, btc: 80253706 },
+    { rate: 477900, btc: 6261808 },
+    { rate: 477777, btc: 208900000 },
+    { rate: 477740, btc: 15000000 },
+    { rate: 477706.19, btc: 5003424 } ],
+ status: 1,
+ error: null }
+ 
+ Explanation of fields:
+ rate -> the amount of the order
+ btc -> the volume of the coin for that order
+  </pre>
+</details>
+
+<b>Getting Buy Order Book for BTCUSDT</b><br>
+<pre>
+bitbnsObj.getBuyOrderBook('BTCUSDT')
 </pre>
 <details> 
   <summary>
