@@ -1377,7 +1377,7 @@ status -> status of cancellation 1 for success
 
 <b>Getting Sell Order Book</b><br>
 <pre>
-bitbnsObj.platformStatus()
+bitbnsObj.getSellOrderBook('XRPUSDT')
 </pre>
 
 <details> 
