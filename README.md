@@ -3,7 +3,10 @@
 This project is designed to assist you make your own projects that interact with the Bitbns API.  This project seeks to have complete API coverage excluding WebSockets which would be released in the future version.
 
 <code><b>Use Python 3.7+</b></code><br><br>
-  
+ 
+<h3>Installation</h3>
+<code>pip3 install bitbns</code>
+
 <br>
 
 <h2>API Access</h2>
@@ -457,7 +460,6 @@ This project is designed to assist you make your own projects that interact with
       <th>200000</th>
     </tr>
 </table>
-
 
 
 <h3>Getting Started</h3><br>
