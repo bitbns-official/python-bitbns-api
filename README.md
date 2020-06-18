@@ -2,7 +2,7 @@
 
 <h3> The owner has deprecated this project. 
 <br>
-Please refer to <a href="https:/github.com/bitbns-official/bitbnspy">Bitbnspy</a> for the Python APIs of Bitbns. 
+Please refer to <a href="https://github.com/bitbns-official/bitbnspy">Bitbnspy</a> for the Python APIs of Bitbns. 
 <br>
 <br>
 <br>
