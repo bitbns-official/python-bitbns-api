@@ -19,9 +19,7 @@ Please refer to <a href="https://github.com/bitbns-official/bitbnspy">Bitbnspy</
 This project is designed to assist you make your own projects that interact with the Bitbns API.  This project seeks to have complete API coverage excluding WebSockets which would be released in the future version.
 
 <code><b>Use Python 3.7+</b></code><br><br>
- 
-<h3>Installation</h3>
-<code>pip3 install bitbns</code>
+
 
 <br>
 
