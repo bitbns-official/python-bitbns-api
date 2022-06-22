@@ -14,7 +14,7 @@ keyring==21.2.1
 kiwisolver==1.2.0
 matplotlib==3.2.1
 nltk==3.5
-numpy==1.18.2
+numpy==1.22.0
 object-detection==0.1
 opencv-python-headless==4.2.0.34
 packaging==20.4
